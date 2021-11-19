@@ -1,0 +1,44 @@
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$	           GIT HUB       	$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Steps for adding files in GitHub
+
+
+*Without Cloning*
+git init
+git status
+git add .
+git commit -m" "
+git remote add origin https://(Link)
+(Method 1)git push -u origin master  //links from remote and your local repositories using the -u
+    				(OR)
+(Method 2)git push -f origin master
+
+*With Cloning*
+git clone https://(Link)
+git add .
+git commit -m " "
+git push origin master
+
+
+*Additional git commands*
+git status
+git log
+git diff (filename.ext)//Shows the difference between the previous commited file and the current name
+git checkout (filename.ext)//Rollback to the previous commited version
+git rm (filename.ext)
+git rm --cached -r .//removes all the file in the directory
+
+
+*Branching in git*
+git branch (name)
+git branch       	//To know the current branch
+git checkout (name)	//Go to that branch
+git add .		//To add all the files
+git commit -m ""        //To commit
+git merge (name which must be merged to the master)
+
+
+
+Common Error faced in git and their solutions:
+
+https://careerkarma.com/blog/git-fatal-remote-origin-already-exists/
